@@ -1,9 +1,9 @@
-# 🚀 Automating Android APK & AAB Generation with GitHub Actions
+# Automating Android APK & AAB Generation with GitHub Actions
 
-## 📌 Overview
+## Overview
 This repository contains a fully automated CI/CD workflow using **GitHub Actions** to generate APK and AAB files for your Android project. Every push to the `master` branch triggers a build process, ensuring that your app artifacts are always up-to-date and ready for testing or release.
 
-## 🎯 Features
+## Features
 ✅ Automated build process for APK & AAB generation  
 ✅ Runs unit tests before building the app  
 ✅ Uploads generated APK & AAB as artifacts  

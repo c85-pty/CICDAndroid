@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.code4galaxy.cicdandroiddemo"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.code4galaxy.cicdandroiddemo"
-        minSdk = 32
-        targetSdk = 35
+        minSdk = 29
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 

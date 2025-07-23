@@ -59,11 +59,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                 defaultElevation = 6.dp
             ),
             modifier = Modifier
-                .size(width = 240.dp, height = 100.dp)
+                .size(width = 340.dp, height = 300.dp)
         ) {
             Column(
                 modifier = Modifier.fillMaxSize()
                     .fillMaxWidth()
+                    .padding(30.dp)
             ) {
                 Text(
                     text = "Hello $name!, great Successfully",

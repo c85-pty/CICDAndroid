@@ -6,12 +6,16 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -38,17 +42,26 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     val context: Context = LocalContext.current
 
-    Text(
-        text = "Hello $name!, great Successfully",
-        modifier = modifier
-    )
-    Button(
-        onClick = {
-            Toast.makeText(context, "Hola Mundo UTP!", Toast.LENGTH_LONG).show()
-        }
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
     ) {
-        Text(text="Imprimir mensaje")
+        Text(
+            text = "Hello $name!, great Successfully",
+            modifier = modifier
+        )
+        Button(
+            onClick = {
+                Toast.makeText(context, "Hola Mundo UTP!", Toast.LENGTH_LONG).show()
+            }
+        ) {
+            Text(text = "Imprimir mensaje")
+        }
     }
+
 }
 
 @Preview(showBackground = true)
